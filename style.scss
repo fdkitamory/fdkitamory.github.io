@@ -1,18 +1,8 @@
----
----
-
-//
-// IMPORTS
-//
-
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
-/**************/
 /* BASE RULES */
-/**************/
-
 html {
   font-size: 100%;
 }
@@ -24,20 +14,11 @@ body {
 .page{
   padding: 10px 15px;
 }
-.header{
-  position: relative;
-  margin: 0 0 10px;
-  border-bottom: 1px solid;
 
-  input{
-    display: none;
+@import "logo";
+@import "header";
 
-    &:checked ~ .menu{ height: calc(100vh - 33px) }
-  }
-}
-.logo{
 
-}
 .menu-toggle{
   display: block;
   float: right;
