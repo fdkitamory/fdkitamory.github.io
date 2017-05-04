@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test SVG repeat background</title>
+    <style>
+        body{
+            height: 5000px;
+        }
+        .line{
+            width: 100px;
+            height: 475px;
+            background: url(/images/drawing_opt.svg);
+        }
+        .line:before, .line:after{
+            content: '';
+            position: absolute; top: 0;
+            width: 381px; height: 100%;
+        }
+        .line:before{
+            left: 0;
+            background-image: linear-gradient(left, #fff, rgba(0,0,0,0));
+        }
+        .line:after{
+            right: 0;
+            background-image: linear-gradient(right, #fff, rgba(0,0,0,0));
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+
+    </div>
+</body>
+</html>
